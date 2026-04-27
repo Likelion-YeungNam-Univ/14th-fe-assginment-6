@@ -1,0 +1,37 @@
+.home-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.home-container h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.action-btn {
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff83b0 0%, #ff5a96 100%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 6px 16px rgba(255, 90, 150, 0.3);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 90, 150, 0.4);
+}

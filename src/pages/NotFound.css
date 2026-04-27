@@ -1,0 +1,44 @@
+/* 전체 화면 가운데 정렬 */
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* 화면 전체 높이 사용 */
+  background-color: #f8f9fa;
+  font-family: "Pretendard", sans-serif;
+  text-align: center;
+}
+
+/* 404 숫자 강조 */
+.error-code {
+  font-size: 80px;
+  font-weight: 900;
+  color: #111;
+  margin: 0;
+  line-height: 1;
+}
+
+/* 안내 문구 */
+.error-message {
+  font-size: 18px;
+  color: #666;
+  margin: 20px 0 40px 0;
+}
+
+/* 뒤로가기 버튼 (멋사 테마 적용) */
+.back-btn {
+  padding: 14px 28px;
+  background-color: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #333;
+}
