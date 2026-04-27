@@ -1,0 +1,75 @@
+/* 전체 컨테이너 가운데 정렬 및 배경색 */
+.mypage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa; /* 로그인 화면과 통일감 있는 배경 */
+  min-height: calc(100vh - 60px); /* 네비게이션 바 높이 제외 */
+  font-family: "Pretendard", sans-serif;
+}
+
+/* 프로필 카드 본체 */
+.profile-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 40px 30px;
+  text-align: center;
+}
+
+/* 🖼️ 추가하신 프로필 이미지 스타일 */
+.profile-image {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%; /* 이미지를 완벽한 동그라미로 만들어줍니다 */
+  object-fit: cover; /* 이미지가 찌그러지지 않고 꽉 차게 잘리도록 설정 */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 사진에 살짝 그림자 추가 */
+}
+
+/* 텍스트 영역 */
+.profile-name {
+  font-size: 24px;
+  font-weight: 800;
+  color: #111;
+  margin: 0 0 8px 0;
+}
+
+.profile-role {
+  font-size: 15px;
+  color: #666;
+  margin: 0 0 30px 0;
+}
+
+/* 정보 박스 영역 */
+.profile-group-info {
+  text-align: left;
+  background-color: #f8f9fa;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between; /* 양쪽 끝으로 쫙 벌려줍니다 */
+  margin-bottom: 14px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-label {
+  color: #888;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+}
