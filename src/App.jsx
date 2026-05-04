@@ -4,6 +4,7 @@ import Login from "./Login";
 import NotFound from "./NotFound";
 import Layout from "./Layout";
 import Mypage from "./Mypage";
+localStorage.removeItem("user");
 
 function App() {
   return (
