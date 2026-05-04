@@ -68,8 +68,10 @@ window.location.href = "/";
 
 ### 아무것도 입력하지 않아도 로그인되는 오류
 원인: 입력값 체크 없이 setItion 하고 있어서 빈 값도 통과된 것.
-```     if (!formData.username || !formData.password || !formData.username.trim() || !formData.password.trim()) 
- ```
+```
+if (!formData.username || !formData.password || formData.username.trim() || !formData.password.trim()) 
+
+```
 위와 같이 빈 값이거나 ' '처럼 공백값을 입력했을 시 로그인이 되지 않도록 함.
 
 #### 새로 알게된 것
