@@ -64,3 +64,16 @@ localStorage.removeItem("user");
 window.location.href = "/";
 ```
 브라우저에 저장해둔 로그인 정보를 삭제하여 로그아웃 기능을 구현해봄.
+
+## 재실행시 로그인 상태 유지 문제 
+로그인 시 `localStorage.setItem("user", JSON.stringify({ username: "darae" }));` 이렇게 브라우저에 데이터를 저장하는데, 이 때
+localStorage 특징 
+* 브라우저 꺼도 안 사라짐
+* 새로고침해도 유지됨
+* npm run dev 다시 실행해도 그대로 있음
+* 직접 지우기 전까지 계속 남음   
+떄문에 재실행시 로그인 정보를 삭제 해줘야 했다.   
+ 
+ 
+따라서 `localStorage.removeItem("user");` 이 내용을 추가하여
+"user"키를 완전히 삭제하는 법을 이용했다.
