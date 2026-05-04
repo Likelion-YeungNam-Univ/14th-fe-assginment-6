@@ -32,6 +32,12 @@ export default Home
 
 - `font-black`
 : tailwind식 font-weight: 900 (굵게)
+
+- `select-none`
+: 텍스트 선택 방지
+
+- `z-0`
+: 레이어 순서 (뒤쪽 기준값)
 ## 로그인
 1. 사용자가 로그인 폼 제출
 2. registerUser(formData) 실행
@@ -50,3 +56,11 @@ setTimeout(() => {
       }, 2000);
 ```
 -> setTimeout 2초
+
+## 로그아웃 구현
+추가적으로 
+``` 
+localStorage.removeItem("user");
+window.location.href = "/";
+```
+브라우저에 저장해둔 로그인 정보를 삭제하여 로그아웃 기능을 구현해봄.
