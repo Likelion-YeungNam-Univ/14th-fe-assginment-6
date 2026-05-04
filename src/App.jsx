@@ -3,6 +3,7 @@ import Home from "./Home";
 import Login from "./Login";
 import NotFound from "./NotFound";
 import Layout from "./Layout";
+import Mypage from "./Mypage";
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home/>}/>
+          <Route path="/mypage" element={<Mypage/>}/> 
         </Route>
+        
         <Route path="/login" element={<Login/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
