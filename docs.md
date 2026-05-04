@@ -57,13 +57,6 @@ setTimeout(() => {
 ```
 -> setTimeout 2초
 
-## 로그아웃 구현
-추가적으로 
-``` 
-localStorage.removeItem("user");
-window.location.href = "/";
-```
-브라우저에 저장해둔 로그인 정보를 삭제하여 로그아웃 기능을 구현해봄.
 
 ## 재실행시 로그인 상태 유지 문제 
 로그인 시 `localStorage.setItem("user", JSON.stringify({ username: "darae" }));` 이렇게 브라우저에 데이터를 저장하는데, 이 때
@@ -77,3 +70,11 @@ localStorage 특징
  
 따라서 `localStorage.removeItem("user");` 이 내용을 추가하여
 "user"키를 완전히 삭제하는 법을 이용했다.
+
+## 로그아웃 구현
+추가적으로 
+``` 
+localStorage.removeItem("user");
+window.location.href = "/";
+```
+브라우저에 저장해둔 로그인 정보를 삭제하여 로그아웃 기능을 구현해봄.
