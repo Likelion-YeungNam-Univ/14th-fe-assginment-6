@@ -78,3 +78,9 @@ localStorage.removeItem("user");
 window.location.href = "/";
 ```
 브라우저에 저장해둔 로그인 정보를 삭제하여 로그아웃 기능을 구현해봄.
+
+## 아무것도 입력하지 않아도 로그인되는 오류
+원인: 입력값 체크 없이 setItion 하고 있어서 빈 값도 통과된 것.
+```     if (!formData.username || !formData.password || !formData.username.trim() || !formData.password.trim()) 
+ ```
+위와 같이 빈 값이거나 ' '처럼 공백값을 입력했을 시 로그인이 되지 않도록 함.

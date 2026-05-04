@@ -20,6 +20,10 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!formData.username || !formData.password || !formData.username.trim() || !formData.password.trim()) 
+    { alert("아이디와 비밀번호를 입력해주세요!");
+      return; }
+      
     alert("로그인이 완료되었습니다!");
 
     localStorage.setItem(
