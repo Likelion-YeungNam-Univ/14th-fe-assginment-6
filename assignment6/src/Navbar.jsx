@@ -18,10 +18,12 @@ export const Navbar = () => {
     );
   } else {
     return (
-      <nav className="p-4 bg-blue-200">
+      <nav className=" flex flex-row  gap-4 p-4 bg-blue-200">
         <ul>
           <li>
-            <Link to="/">홈</Link>
+            <Link className="m-4" to="/">
+              홈
+            </Link>
             <Link to="/mypage">마이페이지</Link>
           </li>
         </ul>

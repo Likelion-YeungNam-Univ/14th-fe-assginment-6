@@ -13,7 +13,9 @@ export const MyPage = () => {
   }
   return (
     <>
-      <h1>{username}님의 마이페이지입니다.</h1>
+      <h1 className="flex m-40 font-bold text-2xl justify-center ">
+        {username}님의 마이페이지입니다.
+      </h1>
     </>
   );
 };

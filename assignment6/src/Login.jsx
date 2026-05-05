@@ -6,7 +6,8 @@ export const Login = () => {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault(); /// 폼 제출 시 페이지 새로고침 방지
     if (id.trim() === "" || pw.trim() === "") {
       alert("아이디와 비밀번호를 입력해주세요.");
       return;
@@ -14,6 +15,7 @@ export const Login = () => {
     localStorage.setItem("username", id);
     alert("로그인 성공!");
     // 2s 후 홈으로 이동 , 뒤로가기 막기
+    console.log(id);
     setTimeout(() => {
       navigate("/", { replace: true });
     }, 2000);

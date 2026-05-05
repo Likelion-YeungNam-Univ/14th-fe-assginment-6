@@ -15,7 +15,7 @@ export const App = () => {
         </Route>
         {/* 레이아웃 X */}
         <Route path="/login" element={<Login></Login>} />
-        <Route path="*" element={<NotFound></NotFound>}></Route>
+        <Route path="*" element={<NotFound></NotFound>} />
       </Routes>
     </BrowserRouter>
   );

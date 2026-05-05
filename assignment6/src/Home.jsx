@@ -23,8 +23,10 @@ export const Home = () => {
       ) : (
         //   로그인 후
         <>
-          <div>환영합니다{username}님!</div>
-          <div>서비스 이용하기</div>
+          <div className="flex flex-col font-bold text-2xl items-center justify-center h-screen gap-4">
+            <div>환영합니다{username}님!</div>
+            <div>서비스 이용하기</div>
+          </div>
         </>
       )}{" "}
     </>
